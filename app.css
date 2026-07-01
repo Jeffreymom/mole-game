@@ -1,18 +1,51 @@
-.grid {
-    width: 456px;
-    height: 456px;
-    display: flex;
-    flex-wrap: wrap;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-
-.square {
-    width: 150px;
-    height: 150px;
-    border: solid black 1px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
 }
-.mole {
-    background-image: url("./mole1-img.png") ;
-    background-size: cover;
+
+h2{
+    margin:10px 0;
+}
+
+.grid{
+    width:90vw;
+    max-width:456px;
+    aspect-ratio:1 / 1;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.square{
+    width:33.3333%;
+    height:33.3333%;
+    border:1px solid black;
+}
+
+.mole{
+    background-image:url("./mole1-img.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:contain;
+}
+
+@media (max-width:600px){
+
+    body{
+        padding:10px;
+    }
+
+    h2{
+        font-size:28px;
+    }
 
 }
